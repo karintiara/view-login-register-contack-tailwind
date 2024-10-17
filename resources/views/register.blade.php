@@ -1,20 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Register</title>
-    @vite('resources/css/app.css')
-</head>
-<body>
-    <div class="relative flex flex-col justify-center h-screen overflow-hidden">
-        <div class="w-full p-6 m-auto bg-white rounded-md shadow-md ring-2 ring-gray-800/50 lg:max-w-xl">
-            <h1 class="text-3xl font-semibold text-center text-gray-700">Register</h1>
-            <form action="{{ route('register.save') }}" method="POST" class="space-y-4">
-                @csrf
+@extends('layouts.app')
+
+@section('title', 'Register Page')
+
+@section('content')
+<div class="relative flex flex-col justify-center h-screen overflow-hidden">
+    <div class="w-full p-6 m-auto bg-white rounded-md shadow-md ring-2 ring-gray-800/50 lg:max-w-xl">
+        <h1 class="text-3xl font-semibold text-center text-gray-700">Register</h1>
+            <form action="/login" method="GET" class="space-y-4">
                 <div>
                     <label class="label">
                         <span class="text-base label-text">Name</span>
@@ -51,11 +43,10 @@
                     <span class="text-red-600">{{ $message }}</span>
                     @enderror
                 </div>
+                <br>
                 <div>
-                    <button type="submit" class="btn btn-block">Register Account</button>
+                    <button type="submit" class="btn btn-block ">Register Account</button>
                 </div>
-                <span>Already have an account ?
-                    <a href="{{ route('login') }}" class="text-blue-600 hover:text-blue-800 hover:underline">Login</a></span>
             </form>
             <div class="flex items-center w-full my-4">
                 <hr class="w-full" />
@@ -78,7 +69,6 @@
                     <p>Login with GitHub</p>
                 </button>
             </div>
-        </div>
     </div>
-</body>
-</html>
+</div>
+@endsection
