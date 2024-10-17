@@ -3,7 +3,7 @@
 @section('title', 'Contact Page')
 
 @section('content')
-<div class="relative flex flex-col justify-center h-screen overflow-hidden">
+<div class="relative flex flex-col justify-center h-full overflow-hidden">
     <div class="w-full p-6 m-auto bg-gray-800 rounded-md shadow-lg ring-2 ring-white/50">
       <h1 class="text-3xl font-semibold text-white">HALAMAN KONTAK</h1>
       <br>
