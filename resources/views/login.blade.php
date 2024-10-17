@@ -4,27 +4,28 @@
 
 @section('content')
 <div class="relative flex flex-col justify-center h-screen overflow-hidden">
-    <div class="w-full p-6 m-auto bg-white rounded-md shadow-md ring-2 ring-gray-800/50 lg:max-w-xl">
-        <h1 class="text-3xl font-semibold text-center text-gray-700">Login</h1>
+    <div class="w-full p-6 m-auto bg-gray-800 rounded-md shadow-lg ring-2 ring-white/50">
+        <h1 class="text-3xl font-semibold text-center text-white">LOGIN</h1>
             <form action="/contact" method="GET" class="space-y-4">
                 <div>
-                    <label class="label">
-                        <span class="text-base label-text">Email</span>
+                    <label class="label text-blue-300">
+                        <span class="text-base label-text text-white">NIM</span>
                     </label>
-                    <input name="email" type="email" placeholder="Email Address" class="w-full input input-bordered" />
+                    <input name="nim" type="text" placeholder="Masukkan NIM" class="w-full input input-bordered border-blue-500" />
                 </div>
                 <div>
-                    <label class="label">
-                        <span class="text-base label-text">Password</span>
+                    <label class="label text-blue-300">
+                        <span class="text-base label-text  text-white">Password</span>
                     </label>
-                    <input name="password" type="password" placeholder="Enter Password" class="w-full input input-bordered" />
+                    <input name="password" type="password" placeholder="Masukkan Password" class="w-full input input-bordered border-blue-500" />
                 </div>
+                <br>
                 <div>
-                    <button type="submit" class="btn btn-block">Login</button>
+                    <button type="submit" class="btn btn-block bg-blue-600 hover:bg-blue-700 text-white">Login</button>
                 </div>
                 <div>
                     <label class="label cursor-pointer">
-                        <span class="label-text">Remember me</span>
+                        <span class="label-text text-white">Remember me</span>
                         <input name="remember" type="checkbox" checked="checked" id="customCheck" class="checkbox checkbox-primary" />
                     </label>
                 </div>

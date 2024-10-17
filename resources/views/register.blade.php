@@ -4,48 +4,42 @@
 
 @section('content')
 <div class="relative flex flex-col justify-center h-screen overflow-hidden">
-    <div class="w-full p-6 m-auto bg-white rounded-md shadow-md ring-2 ring-gray-800/50 lg:max-w-xl">
-        <h1 class="text-3xl font-semibold text-center text-gray-700">Register</h1>
+    <div class="w-full p-6 m-auto bg-gray-800 rounded-md shadow-lg ring-2 ring-white/50 ">
+        <h1 class="text-3xl font-semibold text-center text-white">REGISTER</h1>
             <form action="/login" method="GET" class="space-y-4">
                 <div>
-                    <label class="label">
-                        <span class="text-base label-text">Name</span>
+                    <label class="label text-blue-300">
+                        <span class="text-base label-text text-white">NIM</span>
                     </label>
-                    <input name="name" type="text" placeholder="Name" class="w-full input input-bordered @error('name')is-invalid @enderror" />
-                    @error('name')
-                    <span class="text-red-600">{{ $message }}</span>
-                    @enderror
+                    <input name="nim" type="text" placeholder="Masukkan NIM" class="w-full input input-bordered border-blue-500" />
                 </div>
                 <div>
-                    <label class="label">
-                        <span class="text-base label-text">Email</span>
+                    <label class="label text-blue-300">
+                        <span class="text-base label-text text-white">Nama</span>
                     </label>
-                    <input name="email" type="email" placeholder="Email Address" class="w-full input input-bordered" />
-                    @error('email')
-                    <span class="text-red-600">{{ $message }}</span>
-                    @enderror
+                    <input name="nama" type="text" placeholder="Masukkan Nama" class="w-full input input-bordered border-blue-500" />
                 </div>
                 <div>
-                    <label class="label">
-                        <span class="text-base label-text">Password</span>
+                    <label class="label text-blue-300">
+                        <span class="text-base label-text text-white">Program Studi</span>
                     </label>
-                    <input name="password" type="password" placeholder="Enter Password" class="w-full input input-bordered" />
-                    @error('password')
-                    <span class="text-red-600">{{ $message }}</span>
-                    @enderror
+                    <input name="prodi" type="text" placeholder="Masukkan Program Studi" class="w-full input input-bordered border-blue-500" />
                 </div>
                 <div>
-                    <label class="label">
-                        <span class="text-base label-text">Confirm Password</span>
+                    <label class="label text-blue-300">
+                        <span class="text-base label-text text-white">Email</span>
                     </label>
-                    <input name="password_confirmation" type="password" placeholder="Confirm Password" class="w-full input input-bordered" />
-                    @error('password_confirmation')
-                    <span class="text-red-600">{{ $message }}</span>
-                    @enderror
+                    <input name="email" type="email" placeholder="Masukkan Email" class="w-full input input-bordered border-blue-500" />
+                </div>
+                <div>
+                    <label class="label text-blue-300">
+                        <span class="text-base label-text text-white">Password</span>
+                    </label>
+                    <input name="password" type="password" placeholder="Masukkan Password" class="w-full input input-bordered border-blue-500" />
                 </div>
                 <br>
                 <div>
-                    <button type="submit" class="btn btn-block ">Register Account</button>
+                    <button type="submit" class="btn btn-block bg-blue-600 hover:bg-blue-700 text-white">Register Account</button>
                 </div>
             </form>
             <div class="flex items-center w-full my-4">
