@@ -3,8 +3,8 @@
 @section('title', 'Login Page')
 
 @section('content')
-<div class="relative flex flex-col justify-center h-full overflow-hidden">
-    <div class="w-full p-6 m-auto bg-gray-800 rounded-md shadow-lg ring-2 ring-white/50">
+<div class="relative flex flex-col justify-center h-screen overflow-auto">
+    <div class="w-full p-6 m-auto bg-gray-800 rounded-md shadow-lg ring-2 ring-white/50 lg:max-w-xl max-h-screen overflow-y-auto">
         <h1 class="text-3xl font-semibold text-center text-white">LOGIN</h1>
             <form action="/contact" method="GET" class="space-y-4">
                 <div>
